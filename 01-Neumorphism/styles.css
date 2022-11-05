@@ -13,7 +13,18 @@ body {
     justify-content: center;
     align-items: center;
 }
+button {
+    outline: none;
+    border: none;
+}
+.toggleTheme {
+    background-color: #ececec;
+}
+.toggleThemeBtn {
+    color: palevioletred !important;
+}
 .container {
+    position: relative;
     width: 100%;
     max-width: 800px;
     background-color: rgba(139, 74, 95, 0.28);
@@ -21,6 +32,23 @@ body {
     margin: 0 auto;
     padding: 4rem;
     border-radius: 8px;
+}
+.fa-circle-half-stroke {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    transition: all 150ms ease;
+    color:#ececec;
+}
+.fa-circle-half-stroke:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+.fa-circle-half-stroke:active {
+    transform: translateY(0);
 }
 button[type='button'] {
     height: 200px;
@@ -30,4 +58,11 @@ button[type='button'] {
     border-radius: 50%;
     border: 8px solid #ececec;
     outline: none;
+    font-family: FontAwesome;
+    
+}
+.fa-power-off {
+    font-family: FontAwesome;
+    color: #7a7a7a;
+    font-size: 70px;
 }
