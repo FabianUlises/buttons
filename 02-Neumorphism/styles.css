@@ -1,0 +1,65 @@
+/* Global resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* Default styles */
+button {
+    border: none;
+    outline: none;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: lightslategray;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem
+    
+}
+/* Start of header section  */
+.header {
+    text-align: center;
+    font-size: 1.3rem;
+    flex: 1 0 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+.header__text-content {
+     margin-bottom: 1rem;   
+}
+.header h1 {
+    margin-bottom: 1rem;
+}
+.header p {
+    max-width: 580px;
+    margin: 0 auto;
+}
+.header button {
+    height: 60px;
+    width: 175px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: lightslategray;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2),8px 8px 10px rgba(0, 0, 0, 0.2),
+                -8px -8px 10px rgba(255, 255, 255, 0.29), -8px -8px 15px rgba(0, 0, 0, 0.2)
+        ;
+    border: 1px solid rgba(188, 188, 188, 0.47);
+    transition: box-shadow 250ms ease;
+}
+.header button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),5px 5px 10px rgba(0, 0, 0, 0.2),
+            -5px -5px 10px rgba(255, 255, 255, 0.29), -5px -5px 10px rgba(0, 0, 0, 0.2)
+    ;
+}
+/* End of header section  */
+section {
+    background-color: azure;
+    height: 500px;
+}
